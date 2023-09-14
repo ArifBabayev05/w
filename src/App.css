@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+/* Style for the container that holds the Instagram-like post */
+.instagram-post-container {
+  width: 100%;
+  max-width: 600px; /* Adjust the maximum width as needed */
+  border: 1px solid #ccc;
+  margin: 0 auto;
+  display: block;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Style for the image within the Instagram-like post */
+.instagram-post-image {
+  width: 100%;
+  display: block;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Style for the Instagram username and caption */
+.instagram-post-username {
+  padding: 10px;
+  font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.instagram-post-caption {
+  padding: 10px;
+}
+
+/* Style for the like, comment, and send icons */
+.instagram-post-icons {
+  padding: 10px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+}
+
+.instagram-post-icons i {
+  font-size: 24px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* Style for the like and comment counts */
+.instagram-post-counts {
+  padding: 10px;
+  font-weight: bold;
+}
+
+/* Style for the timestamp */
+.instagram-post-timestamp {
+  padding: 10px;
+  color: #999;
+  font-size: 14px;
+}
+
+/* Style for the download button */
+.instagram-download-button {
+  background-color: #3897f0; /* Instagram's blue color */
   color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px;
+  display: block;
+  margin: 0 auto;
 }
 
-.App-link {
-  color: #61dafb;
+.instagram-download-button:hover {
+  background-color: #2684f3; /* Hover color */
+}
+/* Style for the entire Instagram-like app container */
+.instagram-app-container {
+  text-align: center;
+  background-color: #fafafa; /* Light gray background */
+  padding: 20px;
+  border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Style for the app title */
+.instagram-app-title {
+  font-size: 24px;
+  color: #262626; /* Instagram's text color */
+  margin-bottom: 20px;
+}
+
+/* Style for the custom "Choose Photo" button */
+.instagram-choose-file-button {
+  background-color: #3897f0; /* Instagram's blue color */
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 10px auto;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.instagram-choose-file-button:hover {
+  background-color: #2684f3; /* Hover color */
 }
