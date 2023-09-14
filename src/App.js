@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import watermarkImage from './watermark.webp'; 
+import watermarkImage from '/public/images/watermark.webp'; 
 import './App.css'; // Import your CSS file for styling
 
 const App = () => {
@@ -108,6 +108,8 @@ const App = () => {
   useEffect(() => {
     const watermarkImg = new Image();
     watermarkImg.src = watermarkImage;
+    // watermarkImg.src = "https://i.ibb.co/G9jPtVn/watermark.webp";
+
     watermarkImg.onload = () => {
       setWatermarkImageElement(watermarkImg);
     };
