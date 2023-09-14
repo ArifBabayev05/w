@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import watermarkImage from '/public/images/watermark.webp'; 
+import watermarkImage from './images/watermark.webp'; 
 import './App.css'; // Import your CSS file for styling
 
 const App = () => {
