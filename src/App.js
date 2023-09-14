@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import watermarkImage from './images/watermark.webp'; 
+import watermarkImage from './watermark.webp'; 
 import './App.css'; // Import your CSS file for styling
 
 const App = () => {
   const [images, setImages] = useState([]);
   const [watermarkImageElement, setWatermarkImageElement] = useState(null);
 
+  
   const handleImageUpload = (event) => {
     const uploadedImages = [];
 
